@@ -174,14 +174,18 @@ AI-Data-Analyst-Agent/
 │   └── helpers.py
 │
 ├── data/
+│   └── .gitkeep
+│
 ├── reports/
+│   └── .gitkeep
+│
 ├── tests/
+│   └── .gitkeep
 │
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
 └── README.md
-
 9. Installation and Configuration
 
 Prerequisites
