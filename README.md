@@ -1,100 +1,128 @@
-AI Data Analyst Agent
+<h1 align="center">AI Data Analyst Agent</h1>
 
-An LLM-Powered Multi-Agent System for Automated Data Analysis
+<p align="center">
+  <b>An LLM-powered multi-agent system for automated data analysis</b>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-2E7D32?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/LangGraph-2E7D32?style=for-the-badge&logo=langchain&logoColor=white" />
   <img src="https://img.shields.io/badge/LangChain-2E7D32?style=for-the-badge&logo=langchain&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI_API-2E7D32?style=for-the-badge&logo=openai&logoColor=white" />
-</p><p align="center">
   <img src="https://img.shields.io/badge/Pandas-388E3C?style=for-the-badge&logo=pandas&logoColor=white" />
   <img src="https://img.shields.io/badge/NumPy-388E3C?style=for-the-badge&logo=numpy&logoColor=white" />
   <img src="https://img.shields.io/badge/Plotly-388E3C?style=for-the-badge&logo=plotly&logoColor=white" />
   <img src="https://img.shields.io/badge/FastAPI-388E3C?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-388E3C?style=for-the-badge&logo=streamlit&logoColor=white" />
-</p>---
+</p>
 
-1. Overview
+---
 
-The AI Data Analyst Agent is an intelligent, LLM-powered multi-agent system designed to automate the end-to-end data analysis process through natural language interaction.
+## Table of Contents
 
-The system integrates Large Language Models (LLMs), agent orchestration frameworks and conventional data science libraries to perform analytical tasks with minimal manual intervention.
+1. [Overview](#1-overview)
+2. [Objectives](#2-objectives)
+3. [Core Functionalities](#3-core-functionalities)
+4. [Multi-Agent Architecture](#4-multi-agent-architecture)
+5. [System Architecture](#5-system-architecture)
+6. [Technology Stack](#6-technology-stack)
+7. [Expected Workflow](#7-expected-workflow)
+8. [Project Structure](#8-project-structure)
+9. [Installation and Configuration](#9-installation-and-configuration)
+10. [Future Scope](#10-future-scope)
+11. [Project Status](#11-project-status)
+12. [Author](#12-author)
 
-Users can upload structured datasets and interact with the system through natural language queries. The system coordinates specialised agents to perform data preprocessing, exploratory data analysis, statistical analysis, visualisation and analytical report generation.
+---
 
-The project explores the application of Generative AI and Agentic AI in automating traditional data science workflows.
+## 1. Overview
 
-2. Objectives
+The **AI Data Analyst Agent** is an LLM-powered multi-agent system that automates the end-to-end data analysis process through natural language interaction.
 
-- Develop an autonomous multi-agent system for data analysis.
-- Integrate Large Language Models with conventional data science workflows.
-- Automate data preprocessing and exploratory analysis.
-- Implement intelligent tool selection and execution.
-- Generate data-driven insights and interactive visualisations.
-- Develop an extensible architecture for AI-assisted analytics.
+It combines Large Language Models (LLMs), agent orchestration frameworks and conventional data science libraries to perform analytical tasks with minimal manual effort.
 
-3. Core Functionalities
+Users upload a structured dataset and ask questions in plain language. Specialised agents then handle:
 
-Module| Description
-Natural Language Interface| Accepts analytical queries in natural language.
-Automated Data Cleaning| Identifies missing values, duplicates and inconsistencies.
-Exploratory Data Analysis| Performs descriptive statistics and data exploration.
-Statistical Analysis| Performs statistical computations and relationship analysis.
-Data Visualisation| Generates interactive charts and graphical representations.
-Trend and Anomaly Detection| Identifies patterns, trends and unusual observations.
-Report Generation| Produces structured analytical reports and insights.
+- Data preprocessing
+- Exploratory data analysis
+- Statistical analysis
+- Visualisation
+- Report generation
 
-4. Multi-Agent Architecture
+The project explores how Generative AI and Agentic AI can automate traditional data science workflows.
 
-The system follows a modular multi-agent architecture orchestrated through LangGraph. Each agent is assigned a specialised analytical responsibility, while a central supervisor coordinates task execution and information exchange.
+---
 
-Agent Modules
+## 2. Objectives
 
-01. Supervisor Agent
+- Build an autonomous multi-agent system for data analysis
+- Integrate LLMs with conventional data science workflows
+- Automate data preprocessing and exploratory analysis
+- Implement intelligent tool selection and execution
+- Generate data-driven insights and interactive visualisations
+- Design an extensible architecture for AI-assisted analytics
 
-- Interprets user instructions.
-- Determines the analytical workflow.
-- Assigns tasks to specialised agents.
-- Coordinates execution and integrates outputs.
+---
 
-02. Data Cleaning Agent
+## 3. Core Functionalities
 
-- Detects missing values and duplicate records.
-- Identifies inconsistent data.
-- Applies appropriate preprocessing techniques.
-- Validates data quality.
+| Module | Description |
+|---|---|
+| **Natural Language Interface** | Accepts analytical queries in plain language |
+| **Automated Data Cleaning** | Finds missing values, duplicates and inconsistencies |
+| **Exploratory Data Analysis** | Descriptive statistics and data exploration |
+| **Statistical Analysis** | Statistical computations and relationship analysis |
+| **Data Visualisation** | Interactive charts and graphical output |
+| **Trend and Anomaly Detection** | Identifies patterns, trends and outliers |
+| **Report Generation** | Structured analytical reports and insights |
 
-03. Exploratory Data Analysis Agent
+---
 
-- Examines dataset structure and characteristics.
-- Computes descriptive statistics.
-- Identifies distributions and correlations.
-- Generates exploratory insights.
+## 4. Multi-Agent Architecture
 
-04. Statistical Analysis Agent
+The system is orchestrated with **LangGraph**. Each agent has a specialised responsibility, while a central supervisor coordinates execution and information exchange.
 
-- Performs statistical computations.
-- Conducts hypothesis testing where appropriate.
-- Identifies significant relationships.
-- Interprets analytical findings.
+### 01. Supervisor Agent
+- Interprets user instructions
+- Determines the analytical workflow
+- Assigns tasks to specialised agents
+- Coordinates execution and integrates outputs
 
-05. Visualisation Agent
+### 02. Data Cleaning Agent
+- Detects missing values and duplicate records
+- Identifies inconsistent data
+- Applies appropriate preprocessing techniques
+- Validates data quality
 
-- Selects appropriate visualisation techniques.
-- Generates interactive charts.
-- Represents statistical findings graphically.
-- Produces visual summaries.
+### 03. Exploratory Data Analysis Agent
+- Examines dataset structure and characteristics
+- Computes descriptive statistics
+- Identifies distributions and correlations
+- Generates exploratory insights
 
-06. Report Generation Agent
+### 04. Statistical Analysis Agent
+- Performs statistical computations
+- Conducts hypothesis testing where appropriate
+- Identifies significant relationships
+- Interprets analytical findings
 
-- Consolidates analytical outputs.
-- Summarises findings and observations.
-- Generates actionable insights.
-- Produces comprehensive analytical reports.
+### 05. Visualisation Agent
+- Selects suitable visualisation techniques
+- Generates interactive charts
+- Represents statistical findings graphically
+- Produces visual summaries
 
-5. System Architecture
+### 06. Report Generation Agent
+- Consolidates analytical outputs
+- Summarises findings and observations
+- Generates actionable insights
+- Produces comprehensive analytical reports
 
+---
+
+## 5. System Architecture
+
+```mermaid
 flowchart TD
     A[User] --> B[Streamlit Interface]
     B --> C[Supervisor Agent]
@@ -121,37 +149,45 @@ flowchart TD
     style H fill:#f1f8f2,stroke:#388e3c,color:#1b5e20
     style I fill:#c8e6c9,stroke:#2e7d32,color:#1b5e20
     style J fill:#2e7d32,stroke:#1b5e20,color:#ffffff
+```
 
-The architecture will use a shared workflow state to facilitate communication between agents. Conditional routing will allow the supervisor to determine which analytical modules need to be executed based on the user's request.
+A shared workflow state lets agents communicate with each other. Conditional routing allows the supervisor to run only the analytical modules needed for the user's request.
 
-6. Technology Stack
+---
 
-Technology| Application
-Python| Core application development
-LangGraph| Agent orchestration and workflow management
-LangChain| LLM integration and tool development
-OpenAI API| Language model integration
-Pandas| Data manipulation and analysis
-NumPy| Numerical computation
-Plotly| Interactive data visualisation
-FastAPI| Backend API development
-Streamlit| Interactive frontend
+## 6. Technology Stack
 
-7. Expected Workflow
+| Technology | Purpose |
+|---|---|
+| **Python** | Core application development |
+| **LangGraph** | Agent orchestration and workflow management |
+| **LangChain** | LLM integration and tool development |
+| **OpenAI API** | Language model integration |
+| **Pandas** | Data manipulation and analysis |
+| **NumPy** | Numerical computation |
+| **Plotly** | Interactive data visualisation |
+| **FastAPI** | Backend API development |
+| **Streamlit** | Interactive frontend |
 
-1. Data Input: User uploads a CSV or Excel dataset.
-2. Query Processing: The supervisor interprets the analytical request.
-3. Task Allocation: Relevant agents are selected.
-4. Data Processing: Agents perform cleaning and preprocessing.
-5. Analysis: EDA and statistical analysis are conducted.
-6. Visualisation: Appropriate graphical representations are generated.
-7. Report Generation: Findings are consolidated into a structured report.
-8. Output Delivery: Results are presented through the application interface.
+---
 
-8. Project Structure
+## 7. Expected Workflow
 
+1. **Data Input**: User uploads a CSV or Excel dataset
+2. **Query Processing**: Supervisor interprets the analytical request
+3. **Task Allocation**: Relevant agents are selected
+4. **Data Processing**: Agents clean and preprocess the data
+5. **Analysis**: EDA and statistical analysis are performed
+6. **Visualisation**: Suitable charts are generated
+7. **Report Generation**: Findings are consolidated into a structured report
+8. **Output Delivery**: Results are shown in the application interface
+
+---
+
+## 8. Project Structure
+
+```text
 AI-Data-Analyst-Agent/
-│
 ├── agents/
 │   ├── supervisor.py
 │   ├── data_cleaning_agent.py
@@ -159,111 +195,126 @@ AI-Data-Analyst-Agent/
 │   ├── statistical_agent.py
 │   ├── visualization_agent.py
 │   └── report_agent.py
-│
 ├── workflows/
 │   └── graph.py
-│
 ├── backend/
 │   └── main.py
-│
 ├── frontend/
 │   └── app.py
-│
 ├── utils/
 │   ├── data_loader.py
 │   └── helpers.py
-│
 ├── data/
-│   └── .gitkeep
-│
 ├── reports/
-│   └── .gitkeep
-│
 ├── tests/
-│   └── .gitkeep
-│
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
 └── README.md
-9. Installation and Configuration
+```
 
-Prerequisites
+| Path | Purpose |
+|---|---|
+| `agents/` | Specialised agent modules |
+| `workflows/` | LangGraph workflow definition |
+| `backend/` | FastAPI backend |
+| `frontend/` | Streamlit interface |
+| `utils/` | Data loading and helper functions |
+| `data/` | Uploaded datasets |
+| `reports/` | Generated reports |
+| `tests/` | Test suite |
+
+---
+
+## 9. Installation and Configuration
+
+### Prerequisites
 
 - Python 3.10+
 - Git
 - OpenAI API key
-- pip package manager
+- pip
 
-Step 1: Clone the repository
+### Step 1: Clone the repository
 
+```bash
 git clone https://github.com/YOUR_USERNAME/AI-Data-Analyst-Agent.git
-
 cd AI-Data-Analyst-Agent
+```
 
-Step 2: Create a virtual environment
+### Step 2: Create a virtual environment
 
+```bash
 python -m venv venv
+```
 
-Activate the environment:
+Activate it:
 
-Windows
-
+```bash
+# Windows
 venv\Scripts\activate
 
-Linux / macOS
-
+# Linux / macOS
 source venv/bin/activate
+```
 
-Step 3: Install dependencies
+### Step 3: Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-Step 4: Configure environment variables
+### Step 4: Configure environment variables
 
-Create a ".env" file in the project root directory.
+Create a `.env` file in the project root:
 
+```env
 OPENAI_API_KEY=your_api_key_here
+```
 
-Ensure that environment files containing credentials are excluded from version control.
+> **Note:** Make sure `.env` is excluded from version control.
 
-Step 5: Run the application
+### Step 5: Run the application
 
+```bash
 streamlit run frontend/app.py
+```
 
-10. Future Scope
+---
 
-The system is designed to support further extensions, including:
+## 10. Future Scope
 
-- Integration with SQL and relational databases.
-- Retrieval-Augmented Generation (RAG) for analytical knowledge retrieval.
-- Advanced multi-agent collaboration.
-- Automated machine learning model selection and training.
-- Predictive analytics and time-series forecasting.
-- Human-in-the-loop validation.
-- Model evaluation and agent performance monitoring.
-- PDF and Excel report exports.
-- Cloud-based deployment and scalability.
+- [ ] SQL and relational database integration
+- [ ] Retrieval-Augmented Generation (RAG) for analytical knowledge
+- [ ] Advanced multi-agent collaboration
+- [ ] Automated ML model selection and training
+- [ ] Predictive analytics and time-series forecasting
+- [ ] Human-in-the-loop validation
+- [ ] Model evaluation and agent performance monitoring
+- [ ] PDF and Excel report exports
+- [ ] Cloud deployment and scalability
 
-11. Project Status
+---
 
-Status: Planning and Development
+## 11. Project Status
 
-The project will be implemented incrementally, beginning with individual analytical modules, followed by agent orchestration, integration and application deployment.
+**Status:** Planning and Development
 
-12. Author
+The project will be built incrementally: individual analytical modules first, then agent orchestration, integration and application deployment.
 
-Maya H. Kamat
+---
 
+## 12. Author
+
+**Maya H. Kamat**
 MSc Data Science
 
-Interests: Artificial Intelligence | Machine Learning | Generative AI | Data Science | Agentic AI
+Interests: Artificial Intelligence · Machine Learning · Generative AI · Data Science · Agentic AI
 
 ---
 
 <p align="center">
-  <strong>AI Data Analyst Agent</strong>
-  <br/>
+  <b>AI Data Analyst Agent</b><br/>
   Intelligent Automation for Data-Driven Decision Making
   <br/><br/>
   <img src="https://img.shields.io/badge/Built%20with-Python%20%26%20AI-2E7D32?style=flat-square" />
